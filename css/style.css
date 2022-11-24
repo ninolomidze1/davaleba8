@@ -1,0 +1,140 @@
+.main {
+  display: flex;
+}
+
+/*davaleba1*/
+.square {
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  box-shadow: 10px 15px red;
+}
+
+.square:hover {
+  transition: 2s;
+  box-shadow: 10px 15px 40px 40px red;
+  transform: scale(2);
+}
+/*davaleba2*/
+.circle {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  border-radius: 50%;
+  background-color: yellow;
+  margin-bottom: 100px;
+  animation-name: circle;
+  animation-duration: 4s;
+}
+
+@keyframes circle {
+  from {
+    background-color: yellow;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+/*davaleba3*/
+
+.text {
+  margin-left: 100px;
+}
+
+.text1 {
+  animation-name: paragraph;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes paragraph {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 7px;
+  }
+}
+
+/*davaleba4*/
+header {
+  background-color: rgb(209, 149, 59);
+  box-shadow: inset 1px -45px 35px -25px rgb(221, 184, 250);
+}
+.nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav1:hover {
+  background-color: rgb(80, 26, 26);
+  font-size: 20px;
+  transition: 2s;
+  transition-timing-function: linear;
+}
+
+/*davaleba5*/
+.main1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 50px;
+  object-fit: cover;
+  object-position: center;
+  animation-name: logo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*davaleba6*/
+
+.progressbar {
+  max-width: 500px;
+  width: 100%;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.load {
+  padding: 10px 202px;
+  font-size: 18px;
+}
+
+.loading {
+  max-width: 500px;
+  max-height: 50px;
+  height: 100%;
+  border-radius: 20px;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-name: line;
+  animation-fill-mode: forwards;
+}
+
+@keyframes line {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    background-color: rgb(255, 72, 0);
+    width: 100%;
+  }
+}
